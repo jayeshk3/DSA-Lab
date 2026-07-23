@@ -20,16 +20,32 @@ void SelectionSort(int array1[], int n)
 {
     for (int i = 0; i < n; i++)
     {
-        
+        int min = i;
+        for (int j = i + 1; j < n - i; j++)
+        {
+            if (array1[min] > array1[j])
+            {
+                min = j;
+                int temp = array1[min];
+                array1[min] = array1[j];
+                array1[j] = temp;
+            }
+        }
+        if (min != i)
+        {
+            int temp = array1[min];
+                array1[min] = array1[i];
+                array1[i] = temp;
+        }
     }
 }
 
 int main(void)
 {
-    int num[] = {1, 5, 7, 23, 5, 22, 9};
+    int num[] = {1, 7, 23, 5, 22, 9};
     int n = 0;
     n = sizeof(num)/sizeof(num[0]);
-    BubbleSort(num, n);
+    SelectionSort(num, n);
     for (int i = 0; i < n; i++)
     {
         printf("%i, ", num[i]);
