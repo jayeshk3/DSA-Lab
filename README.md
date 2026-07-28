@@ -1,11 +1,17 @@
-# DSA-Lab
-SE DSA Lab
+DY-Lab
+    # DSA-Lab
+    SE DSA Lab
 
-Lab1 --
-    Introduction to DSA and performed operations on arrays
+    Lab1 --
+        Introduction to DSA and performed operations on arrays
 
-Lab2 --
-    Sorting algorithm started with bubble sort
+    Lab2 --
+        Sorting algorithm started with bubble sort
 
-Lab3 -- 
-    Continued sorting algorithm with selection sort
+    Lab3 -- 
+        Continued sorting algorithm with selection sort
+
+    # AI-Lab    
+
+    Lab1 -- 
+        Make a rule based 
