@@ -16,7 +16,7 @@ void compare(int a, int b){
 		printf("Both are equal\n");
 		}
 	}
-    
+
 void posneg(int a){
 	if(a > 0){
 		printf("%d is positive\n", a);	
@@ -59,7 +59,26 @@ int grtarr(int a1[], int n){
 	return grt;
 }
 
+int grar2(int a2[], int n){
+	int grt = a2[0];
+	for (int i = 0; i < n; i++){
+		if(grt < a2[i]){
+			grt = a2[i];
+		}
+	}
+	int gt2 = a2[0];
+	for (int i = 0; i < n; i++){
+		if(gt2 < a2[i] && a2[i] < grt){
+			gt2 = a2[i];
+		}
+		else if(gt2 == grt){
+		gt2 = a2[1];
+		}
+	}
+	return gt2;
+}
+
 int main(void){;
     int  ar1[7] = {2, 14, 22, 19, 9, 2, 12};
-    printf("%d\n", grtarr(ar1, 7));
+    printf("%d\n", grar2(ar1, 7));
 }
